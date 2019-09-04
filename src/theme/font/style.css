@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("./icomoon.eot?1k3d1d");
+  src: url("./icomoon.eot?1k3d1d#iefix") format("embedded-opentype"),
+    url("./icomoon.ttf?1k3d1d") format("truetype"),
+    url("./icomoon.woff?1k3d1d") format("woff"),
+    url("./icomoon.svg?1k3d1d#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-bed:before {
+  content: "\e901";
+}
+.icon-laundry:before {
+  content: "\e902";
+}
+.icon-left:before {
+  content: "\e903";
+}
+.icon-menu:before {
+  content: "\e904";
+}
+.icon-right:before {
+  content: "\e905";
+}
+.icon-room:before {
+  content: "\e906";
+}
+.icon-shower:before {
+  content: "\e907";
+}
+.icon-whatsapp:before {
+  content: "\e908";
+}
+.icon-tw:before {
+  content: "\e909";
+}
+.icon-insta:before {
+  content: "\e90a";
+}
+.icon-fb:before {
+  content: "\e90b";
+}
+.icon-play:before {
+  content: "\e90c";
+}
+.icon-cenotes:before {
+  content: "\e90d";
+}
+.icon-wifi:before {
+  content: "\e90e";
+}
+.icon-spa:before {
+  content: "\e90f";
+}
+.icon-scroll:before {
+  content: "\e910";
+}
