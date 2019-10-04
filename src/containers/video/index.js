@@ -1,8 +1,17 @@
 import React, { Component } from "react";
-import { VideoWrapper, Logo, VideoTitle, Button } from "./index.styled";
+import {
+  VideoWrapper,
+  Logo,
+  VideoTitle,
+  Button,
+  Rows,
+  Row,
+  BookWrapper
+} from "./index.styled";
 import logo from "../../theme/logo-blanco.png";
 
 import HeaderComponent from "../../components/header/index";
+import ScriptTag from "react-script-tag";
 
 class VideoContainer extends Component {
   // componentDidMount() {
@@ -19,6 +28,23 @@ class VideoContainer extends Component {
       this.props.lang === "es"
         ? "Llena tus sentidos con paz, tranquilidad y espiritualidad."
         : "Surround your senses with peace, tranquility & spirituality.";
+    // const script = (
+    //   <ScriptTag
+    //     isHydrating={true}
+    //     async
+    //     data-form-id="5d6060985a0cc"
+    //     data-widget="small"
+    //     src="https://secured.sirvoy.com/widget/sirvoy.js"
+    //   />
+    // );
+    const script = (
+      <script
+        async
+        data-form-id="5d6060985a0cc"
+        data-widget="small"
+        src="https://secured.sirvoy.com/widget/sirvoy.js"
+      />
+    );
     return (
       <section id="video">
         <VideoWrapper style={{ height: `${this.props.height}px` }}>
@@ -26,11 +52,18 @@ class VideoContainer extends Component {
             <img alt="La Xtabay | Cabañas | Cenote | Spa" src={logo} />
           </Logo>
           <div style={{ width: "100%" }}>
-            <VideoTitle className="wow fadeInUp">
-              <span>{text1}...</span>
-              {text2}
-            </VideoTitle>
-            <Button href={bookLink}>{book}</Button>
+            <Rows>
+              <Row shrink>
+                <VideoTitle className="wow fadeInUp">
+                  <span>{text1}...</span>
+                  {text2}
+                </VideoTitle>
+                <Button href={bookLink}>{book}</Button>
+              </Row>
+              <Row width="400px">
+                <BookWrapper>{script}</BookWrapper>
+              </Row>
+            </Rows>
           </div>
           <HeaderComponent
             openVideo={this.props.openVideo}

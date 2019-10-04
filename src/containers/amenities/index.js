@@ -29,8 +29,8 @@ class AmenitiesContainer extends Component {
         title: "Spa"
       },
       {
-        icon: "icon-laundry",
-        title: this.props.lang === "es" ? "Cuarto de lavado" : "Laundry"
+        icon: "icon-restaurant",
+        title: this.props.lang === "es" ? "Restaurante" : "Restaurant"
       }
     ];
     this.amenities = amenities.map((a, index) => {

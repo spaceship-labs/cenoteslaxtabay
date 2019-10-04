@@ -17,6 +17,7 @@ export const Theme = {
   //media query
   largeBreakPoint:
     "@media only screen and (min-width: 1400px), only screen and (min-width: 500px) and (min-resolution: 2dppx)",
+  desktopBreakPoint: "@media only screen and (max-width: 1200px)",
   mediumBreakPoint: "@media only screen and (max-width: 750px)",
   smallBreakPoint: "@media only screen and (max-width: 450px)",
   //sizes

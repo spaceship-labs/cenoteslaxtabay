@@ -108,4 +108,35 @@ const Button = styled.a`
   max-width: 90%;
 `;
 
-export { VideoWrapper, VideoTitle, Logo, Button };
+const Rows = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  ${props => (props.wrap ? "flex-wrap: wrap;" : "")}
+  @media only screen and (max-width: 780px) {
+    flex-direction: column;
+  }
+`;
+
+const Row = styled.div`
+  flex: ${props => (props.width ? "0 1 " + props.width : "1 0 auto")};
+  ${props => (props.shrink ? "flex: 0 1 auto;" : "")}
+  flex-direction: column;
+  max-width: 100%;
+  max-width: ${props => (props.width ? props.width : "100%")};
+  @media only screen and (max-width: 780px) {
+    flex: 1 0 auto;
+    max-width: 100%;
+  }
+`;
+
+const BookWrapper = styled.div`
+  padding: 30px 0;
+  min-width: 400px;
+  ${props => props.theme.smallBreakPoint} {
+    min-width: 100%;
+  }
+`;
+
+export { VideoWrapper, VideoTitle, Logo, Button, Rows, Row, BookWrapper };
