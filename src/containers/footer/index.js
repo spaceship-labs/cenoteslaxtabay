@@ -22,11 +22,11 @@ class footerContainer extends Component {
     };
   }
   componentDidMount() {
-    const c = this.getCookie("xtabay");
-    if (!c) {
-      this.setState({ cookieLabel: true });
-      this.setCookie();
-    }
+    // const c = this.getCookie("xtabay");
+    // if (!c) {
+    //   this.setState({ cookieLabel: true });
+    //   this.setCookie();
+    // }
   }
   toggle = () => {
     this.setState({ status: !this.state.status });

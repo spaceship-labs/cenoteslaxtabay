@@ -49,16 +49,7 @@ class LocationContainer extends Component {
             Loche, a 21 kilómetros de Río Lagartos. El aeropuerto más cercano es
             el Aeropuerto Internacional de Chichen Itzá. La mejor manera de
             trasladarte al Cenote de Xtabay es en auto, disponible para rentar
-            en el aeropuerto. Para más información clickear (
-            <a
-              href="http://www.aicza.mx/#Contacts-page"
-              target="_blank"
-              without
-              rel="noopener noreferrer"
-            >
-              http://www.aicza.mx/#Contacts-page
-            </a>
-            ). También puedes utilizar el aeropuerto de la Ciudad de Mérida, la
+            en el aeropuerto. También puedes utilizar el aeropuerto de la Ciudad de Mérida, la
             capital del estado.
           </span>
         ) : (
@@ -67,15 +58,7 @@ class LocationContainer extends Component {
             highway, in the town of Loche, only 21 kilometers from Río Lagartos.
             The nearest airport is the Chichen Itza International Airport. The
             best way to get to the Cenote Xtabay is by car, which is available
-            to hire at the airport. For more information, click here{" "}
-            <a
-              href="http://www.aicza.mx/#Contacts-page"
-              target="_blank"
-              without
-              rel="noopener noreferrer"
-            >
-              http://www.aicza.mx/#Contacts-page
-            </a>{" "}
+            to hire at the airport.
             You could also get to Xtabay from Merida’s airport (which is the
             capital city of the state of Yucatan)
           </span>
